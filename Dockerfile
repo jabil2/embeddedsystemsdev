@@ -12,8 +12,8 @@ help2man make gcc g++ desktop-file-utils libgl1-mesa-dev libglu1-mesa-dev \
 mercurial automake groff curl lzop asciidoc u-boot-tools dos2unix mtd-utils pv \
 libncurses5 libncurses5-dev libncursesw5-dev libelf-dev zlib1g-dev
 
-# Cmake
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y cmake
+# Cmake and ninja
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y cmake ninja-build
 
 # LLVM/clang
 RUN printf 'deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial main \n\
