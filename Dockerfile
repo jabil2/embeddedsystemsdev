@@ -22,3 +22,21 @@ RUN DEBIAN_FRONTEND=noninteractive  apt-get install -y  gcc-arm-linux-gnueabi g+
 # ARM 64
 RUN DEBIAN_FRONTEND=noninteractive  apt-get install -y  gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
 
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y  libllvm-7-ocaml-dev libllvm7 llvm-7 llvm-7-dev  llvm-7-examples llvm-7-runtime \
+clang-7 clang-tools-7 libclang-common-7-dev libclang-7-dev libclang1-7 clang-format-7 python-clang-7  \
+libfuzzer-7-dev lldb-7 lld-7 libc++-7-dev libc++abi-7-dev  libomp-7-dev
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y  libllvm-8-ocaml-dev libllvm8 llvm-8 llvm-8-dev llvm-8-doc llvm-8-examples llvm-8-runtime \
+clang-8 clang-tools-8 clang-8-doc libclang-common-8-dev libclang-8-dev libclang1-8 clang-format-8 python-clang-8  \
+libfuzzer-8-dev lldb-8 lld-8 libc++-8-dev libc++abi-8-dev  libomp-8-dev
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y  libllvm-9-ocaml-dev libllvm9 llvm-9 llvm-9-dev llvm-9-doc llvm-9-examples llvm-9-runtime \
+clang-9 clang-tools-9 clang-9-doc libclang-common-9-dev libclang-9-dev libclang1-9 clang-format-9 python-clang-9  \
+libfuzzer-9-dev lldb-9 lld-9 libc++-9-dev libc++abi-9-dev  libomp-9-dev 
+
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y  libllvm-10-ocaml-dev libllvm9 llvm-10 llvm-10-dev llvm-10-doc llvm-10-examples llvm-10-runtime \
+clang-10 clang-tools-10 clang-10-doc libclang-common-10-dev libclang-10-dev libclang1-10 clang-format-10   \
+libfuzzer-10-dev lldb-10 lld-10 libc++-10-dev libc++abi-10-dev  libomp-10-dev 
+
+
+
