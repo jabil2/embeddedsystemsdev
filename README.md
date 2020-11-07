@@ -1,4 +1,4 @@
-# ubuntu for embedded development
+# embedded systems development 
 
 Tested boards
 * Variscite VAR-SOM-SOLO
